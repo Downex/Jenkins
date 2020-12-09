@@ -47,7 +47,9 @@ public class CalculatorTest {
         int number2 = 0;
         int expResult = 0;
         int result = Calculator.add(number1, number2);
-        assertEquals(expResult, result);
+        assertNotEquals("error in add()", -9, Calculator.add(9, 0));
+        //assertEquals("error in add()", -5, Calculator.add(5, 0)); 
+        //assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -59,7 +61,7 @@ public class CalculatorTest {
     public void testDivInt() {
         System.out.println("divInt");
         int number1 = 0;
-        int number2 = 0;
+        int number2 = 5;
         int expResult = 0;
         int result = Calculator.divInt(number1, number2);
         assertEquals(expResult, result);
@@ -74,7 +76,7 @@ public class CalculatorTest {
     public void testDivReal() {
         System.out.println("divReal");
         int number1 = 0;
-        int number2 = 0;
+        int number2 = 1;
         double expResult = 0.0;
         double result = Calculator.divReal(number1, number2);
         assertEquals(expResult, result, 0.0);
