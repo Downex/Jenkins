@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > 
+<suite name="MultiplyCalculatorTest"> 
+<test name="testAdd"> 
+<test name="testDivReal"> 
+<test name="testDivInt"> 
+<classes> 
+<class name="CalculatorNGTest"/> 
+</classes> 
+</test>
+</suite>
